@@ -9,7 +9,6 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 
-
 public class ShowAllUsersController extends ApiBaseController {
 
     public ShowAllUsersController() {
@@ -38,5 +37,8 @@ public class ShowAllUsersController extends ApiBaseController {
         });
         Thread t1 = new Thread(show);
         t1.start();
+    }
+    public void back(){
+        ChangeScene.launchScene("/views/Menu.fxml");
     }
 }

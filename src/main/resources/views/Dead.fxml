@@ -5,10 +5,32 @@
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="views.Dead"
-            prefHeight="400.0" prefWidth="600.0">
-
+            fx:controller="API.DeadController"
+            prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;">
+    <children>
+        <Label alignment="CENTER" layoutX="-2.0" prefHeight="103.0" prefWidth="807.0" style="-fx-background-color: #15C31F;" text="ZMARLI" textFill="WHITE">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Label>
+        <Button alignment="CENTER" layoutX="236.0" layoutY="123.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="320.0" style="-fx-background-color: #15C31F;" text="Dodaj użytkownika do zmarłych" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Button alignment="CENTER" contentDisplay="CENTER" layoutX="236.0" layoutY="200.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="320.0" style="-fx-background-color: #15C31F;" text="Wyświetl zmarłych użytkowników" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+        <Button onAction="#back" alignment="CENTER" layoutX="236.0" layoutY="318.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="320.0" style="-fx-background-color: #15C31F;" text="Powrót" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Button>
+    </children>
 </AnchorPane>
