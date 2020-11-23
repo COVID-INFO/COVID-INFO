@@ -25,4 +25,5 @@ public class User {
     private int infected;
     @Column
     private int dead;
+
 }

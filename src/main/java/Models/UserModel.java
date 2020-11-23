@@ -10,46 +10,56 @@ import org.hibernate.Transaction;
 public class UserModel {
     private SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 
-    public User getUser(String p){
+    public User getUser(String pesel){
         User user;
         Transaction transaction = null;
         try (Session session = sessionFactory.openSession()) {
             transaction = session.beginTransaction();
 
             user = (User) session.createQuery("from User WHERE pesel = :pesel")
-                    .setParameter("pesel", p)
+                    .setParameter("pesel", pesel)
                     .getSingleResult();
 
             transaction.commit();
 
         } catch (Exception e) {
             user = null;
-            if (transaction != null) {
-                transaction.rollback();
-            }
+
         }
 
         return user;
     }
-    public ObservableList getListOfUsers()
+    public ObservableList getListOfUsers(String type)
     {
-        ObservableList soldiers;
+
+        ObservableList users;
         Transaction transaction = null;
         try (Session session = sessionFactory.openSession()) {
             transaction = session.beginTransaction();
-
-            soldiers = FXCollections.observableArrayList(session.createQuery("from User").getResultList());
-
+            switch (type) {
+                default:
+                    users = FXCollections.observableArrayList(session.createQuery("from User").getResultList());
+                    break;
+                case "dead":
+                    users = FXCollections.observableArrayList(session.createQuery("from User WHERE dead = 1").getResultList());
+                    break;
+                case "recovered":
+                    users = FXCollections.observableArrayList(session.createQuery("from User WHERE recovered = 1").getResultList());
+                    break;
+                case "quarantine":
+                    users = FXCollections.observableArrayList(session.createQuery("from User WHERE quarantine = 1").getResultList());
+                    break;
+                case "infected":
+                    users = FXCollections.observableArrayList(session.createQuery("from User WHERE infected = 1").getResultList());
+                    break;
+            }
             transaction.commit();
 
         } catch (Exception e) {
-            soldiers = null;
-            if (transaction != null) {
-                transaction.rollback();
-            }
-        }
+            users = null;
 
-        return soldiers;
+        }
+        return users;
     }
 
 

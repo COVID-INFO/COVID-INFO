@@ -10,39 +10,39 @@
    <children>
       <VBox alignment="CENTER" layoutX="13.0" layoutY="44.0" prefHeight="445.0" prefWidth="773.0">
          <children>
-            <Button mnemonicParsing="false" onAction="#listOfUsers" prefHeight="50.0" prefWidth="320.0" style="-fx-border-radius: 5px; -fx-border-color: #000000; -fx-background-color: #15C31F;" text="Lista użytkowników" textFill="WHITE">
+            <Button mnemonicParsing="false" onAction="#listOfUsers" prefHeight="50.0" prefWidth="320.0" style="-fx-border-radius: 5px; -fx-border-color: #000000; -fx-background-color: #0c7d2c;" text="Lista użytkowników" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font></Button>
-            <Button mnemonicParsing="false" onAction="#quarantine" prefHeight="50.0" prefWidth="320.0" style="-fx-border-radius: 5px; -fx-border-color: #000000; -fx-background-color: #15C31F;" text="Lista osób na kwarantannie" textFill="WHITE">
+            <Button mnemonicParsing="false" onAction="#quarantine" prefHeight="50.0" prefWidth="320.0" style="-fx-border-radius: 5px; -fx-border-color: #000000; -fx-background-color: #0c7d2c;" text="Lista osób na kwarantannie" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font></Button>
-            <Button mnemonicParsing="false" onAction="#infected" prefHeight="50.0" prefWidth="320.0" style="-fx-border-radius: 5px; -fx-border-color: #000000; -fx-background-color: #15C31F;" text="Lista osób zarażonych" textFill="WHITE">
+            <Button mnemonicParsing="false" onAction="#infected" prefHeight="50.0" prefWidth="320.0" style="-fx-border-radius: 5px; -fx-border-color: #000000; -fx-background-color: #0c7d2c;" text="Lista osób zarażonych" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font></Button>
-            <Button mnemonicParsing="false" onAction="#recovered" prefHeight="50.0" prefWidth="320.0" style="-fx-border-radius: 5px; -fx-border-color: #000000; -fx-background-color: #15C31F;" text="Lista osób ozdrowiałych" textFill="WHITE">
+            <Button mnemonicParsing="false" onAction="#recovered" prefHeight="50.0" prefWidth="320.0" style="-fx-border-radius: 5px; -fx-border-color: #000000; -fx-background-color: #0c7d2c;" text="Lista osób ozdrowiałych" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font></Button>
-            <Button mnemonicParsing="false" onAction="#dead" prefHeight="50.0" prefWidth="320.0" style="-fx-border-radius: 5px; -fx-border-color: #000000; -fx-background-color: #15C31F;" text="Lista osób zmarłych" textFill="WHITE">
+            <Button mnemonicParsing="false" onAction="#dead" prefHeight="50.0" prefWidth="320.0" style="-fx-border-radius: 5px; -fx-border-color: #000000; -fx-background-color: #0c7d2c;" text="Lista osób zmarłych" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font></Button>
-            <Button mnemonicParsing="false" onAction="#polls" prefHeight="50.0" prefWidth="320.0" style="-fx-border-radius: 5px; -fx-border-color: #000000; -fx-background-color: #15C31F;" text="Sprawdź ankiety" textFill="WHITE">
+            <Button mnemonicParsing="false" onAction="#polls" prefHeight="50.0" prefWidth="320.0" style="-fx-border-radius: 5px; -fx-border-color: #000000; -fx-background-color: #0c7d2c;" text="Sprawdź ankiety" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font></Button>
-            <Button mnemonicParsing="false" onAction="#requests" prefHeight="50.0" prefWidth="320.0" style="-fx-border-radius: 5px; -fx-border-color: #000000; -fx-background-color: #15C31F;" text="Sprawdź wnioski" textFill="WHITE">
+            <Button mnemonicParsing="false" onAction="#requests" prefHeight="50.0" prefWidth="320.0" style="-fx-border-radius: 5px; -fx-border-color: #000000; -fx-background-color: #0c7d2c;" text="Sprawdź wnioski" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font></Button>
-            <Button mnemonicParsing="false" onAction="#statistics" prefHeight="50.0" prefWidth="320.0" style="-fx-border-radius: 5px; -fx-border-color: #000000; -fx-background-color: #15C31F;" text="Statystyki" textFill="WHITE">
+            <Button mnemonicParsing="false" onAction="#statistics" prefHeight="50.0" prefWidth="320.0" style="-fx-border-radius: 5px; -fx-border-color: #000000; -fx-background-color: #0c7d2c;" text="Statystyki" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font></Button>
-            <Button mnemonicParsing="false" onAction="#logout" prefHeight="50.0" prefWidth="320.0" style="-fx-border-radius: 5px; -fx-border-color: #000000; -fx-background-color: #15C31F;" text="Wyloguj" textFill="WHITE">
+            <Button mnemonicParsing="false" onAction="#logout" prefHeight="50.0" prefWidth="320.0" style="-fx-border-radius: 5px; -fx-border-color: #000000; -fx-background-color: #0c7d2c;" text="Wyloguj" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font></Button>

@@ -10,7 +10,7 @@
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="API.RegistrationController">
    <children>
 
-       <Label alignment="CENTER" contentDisplay="CENTER" layoutX="96.0" layoutY="20.0" maxWidth="1.7976931348623157E308" prefHeight="57.0" prefWidth="431.0" style="-fx-font-size: 25;" text="Witamy w rejestracji" textAlignment="CENTER" textFill="WHITE">
+       <Label  alignment="CENTER" contentDisplay="CENTER" layoutX="96.0" layoutY="20.0" maxWidth="1.7976931348623157E308" prefHeight="57.0" prefWidth="431.0" style="-fx-font-size: 25;" text="Witamy w rejestracji" textAlignment="CENTER" textFill="WHITE">
            <font>
                <Font size="31.0" />
            </font>
@@ -19,9 +19,9 @@
                <Insets bottom="20.0" />
            </padding>
        </Label>
-       <TextField fx:id="pesel" layoutX="54.0" layoutY="177.0" prefHeight="37.0" prefWidth="516.0" style="-fx-background-color: #000000; -fx-border-color: #15C31F;" />
-       <TextField fx:id="lastname" layoutX="54.0" layoutY="277.0" prefHeight="37.0" prefWidth="516.0" style="-fx-background-color: #000000; -fx-border-color: #15C31F;" />
-       <Button layoutX="185.0" layoutY="334.0" mnemonicParsing="false" onAction="#register" prefHeight="37.0" prefWidth="253.0" style="-fx-background-color: #15C31F;" text="Zarejestruj" textFill="WHITE">
+       <TextField fx:id="pesel" layoutX="54.0" layoutY="177.0" prefHeight="37.0" prefWidth="516.0" style="-fx-background-color: #000000; -fx-border-color: #0c7d2c;" />
+       <TextField fx:id="lastname" layoutX="54.0" layoutY="277.0" prefHeight="37.0" prefWidth="516.0" style="-fx-background-color: #000000; -fx-border-color: #0c7d2c;" />
+       <Button layoutX="185.0" layoutY="334.0" mnemonicParsing="false" onAction="#register" prefHeight="37.0" prefWidth="253.0" style="-fx-background-color: #0c7d2c;" text="Zarejestruj" textFill="WHITE">
            <font>
                <Font size="16.0" />
            </font></Button>
@@ -42,5 +42,6 @@
          </padding>
       </Label>
        <Label fx:id="peselExist" alignment="CENTER" layoutX="5.0" layoutY="48.0" prefHeight="37.0" prefWidth="595.0" text="Podany pesel już istnieje! " textFill="#da0c0c" visible="false" />
+      <Label fx:id="created" alignment="CENTER" layoutX="15.0" layoutY="58.0" prefHeight="37.0" prefWidth="595.0" text="Utworzono użytkownika!" textFill="#51d90d" visible="false" />
    </children>
 </AnchorPane>

@@ -7,7 +7,7 @@ public class MenuController {
 
     @FXML
     private void listOfUsers() {
-       ChangeScene.launchScene("/views/ShowAllUsers.fxml");
+       ChangeScene.launchScene("/views/Users.fxml");
     }
     @FXML
     private void quarantine() {

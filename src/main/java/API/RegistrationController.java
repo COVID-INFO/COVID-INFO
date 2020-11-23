@@ -11,14 +11,27 @@ public class RegistrationController {
     @FXML private TextField pesel;
     @FXML private TextField lastname;
     @FXML private Label peselExist;
+    @FXML private Label created;
     @FXML
     public void register(){
+        created.setVisible(false);
         peselExist.setVisible(false);
         String p = this.pesel.getText();
         String l = this.lastname.getText();
         UserModel userModel = new UserModel();
-        if (userModel.getUser(p) != null) peselExist.setVisible(true);
-        else  userModel.createUser(p, l);
-
+        if (userModel.getUser(p) != null) {
+            peselExist.setVisible(true);
+        }
+        else {
+            userModel.createUser(p, l);
+            peselExist.setVisible(false);
+            created.setVisible(true);
+        }
     }
+
+    @FXML
+    public void back(){
+        ChangeScene.launchScene("/views/Users.fxml");
+    }
+
 }

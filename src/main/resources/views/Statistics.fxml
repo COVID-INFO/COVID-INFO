@@ -13,12 +13,12 @@
             fx:controller="API.StatisticsController"
             prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;">
     <children>
-    <Label alignment="CENTER" layoutX="-2.0" prefHeight="103.0" prefWidth="807.0" style="-fx-background-color: #15C31F;" text="STATYSTYKI" textFill="WHITE">
+    <Label alignment="CENTER" layoutX="-2.0" prefHeight="103.0" prefWidth="807.0" style="-fx-background-color: #0c7d2c;" text="STATYSTYKI" textFill="WHITE">
     <font>
         <Font size="23.0" />
     </font>
     </Label>
-    <Button onAction="#back" alignment="CENTER" layoutX="236.0" layoutY="318.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="320.0" style="-fx-background-color: #15C31F;" text="Powrót" textAlignment="CENTER" textFill="WHITE">
+    <Button onAction="#back" alignment="CENTER" layoutX="236.0" layoutY="318.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="320.0" style="-fx-background-color: #0c7d2c;" text="Powrót" textAlignment="CENTER" textFill="WHITE">
         <font>
             <Font size="15.0" />
         </font>

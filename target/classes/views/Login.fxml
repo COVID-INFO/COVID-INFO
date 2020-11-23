@@ -8,13 +8,11 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="425.0" prefWidth="667.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="API.LoginController">
-   <VBox layoutX="4.0" layoutY="1.0" prefHeight="425.0" prefWidth="667.0" />
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="API.LoginController">
 
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="123.0" layoutY="14.0" maxWidth="1.7976931348623157E308" prefHeight="57.0" prefWidth="431.0" style="-fx-font-size: 25;" text="COVID-INFO" textAlignment="CENTER" textFill="WHITE">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="5.0" maxWidth="1.7976931348623157E308" prefHeight="70.0" prefWidth="802.0" style="-fx-font-size: 25;" text="COVID-INFO" textAlignment="CENTER" textFill="WHITE">
 <font>
    <Font size="31.0" />
 </font>
@@ -23,7 +21,7 @@
    <Insets bottom="20.0" />
 </padding>
 </Label>
-   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="134.0" layoutY="213.0" maxWidth="1.7976931348623157E308" prefHeight="57.0" prefWidth="400.0" style="-fx-font-size: 20;" text="Logowanie" textAlignment="CENTER" textFill="WHITE">
+   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="206.0" layoutY="197.0" maxWidth="1.7976931348623157E308" prefHeight="27.0" prefWidth="400.0" style="-fx-font-size: 20;" text="Logowanie" textAlignment="CENTER" textFill="WHITE">
       <font>
          <Font name="Bodoni MT Bold" size="39.0" />
       </font>
@@ -31,19 +29,19 @@
          <Insets bottom="20.0" />
       </padding>
    </Label>
-   <TextField fx:id="pesel" layoutX="84.0" layoutY="269.0" prefHeight="25.0" prefWidth="516.0" promptText="Login" style="-fx-background-color: #000000; -fx-border-color: #15C31F;" />
-   <PasswordField fx:id="password" layoutX="84.0" layoutY="315.0" prefHeight="25.0" prefWidth="516.0" promptText="Hasło" style="-fx-background-color: #000000; -fx-border-color: #15C31F;" />
-   <Button layoutX="347.0" layoutY="361.0" mnemonicParsing="false" onAction="#registrationForm" prefHeight="37.0" prefWidth="253.0" style="-fx-background-color: #15C31F;" text="Zarejestruj" textFill="WHITE">
+   <TextField fx:id="pesel" layoutX="143.0" layoutY="270.0" prefHeight="25.0" prefWidth="516.0" promptText="Login" style="-fx-background-color: #000000; -fx-border-color: #0c7d2c;" />
+   <PasswordField fx:id="password" layoutX="143.0" layoutY="314.0" prefHeight="25.0" prefWidth="516.0" promptText="Hasło" style="-fx-background-color: #000000; -fx-border-color: #0c7d2c;" />
+   <Button layoutX="406.0" layoutY="361.0" mnemonicParsing="false" onAction="#registrationForm" prefHeight="37.0" prefWidth="253.0" style="-fx-background-color: #0c7d2c;" text="Zarejestruj" textFill="WHITE">
       <font>
          <Font size="16.0" />
       </font></Button>
-   <Button layoutX="84.0" layoutY="361.0" mnemonicParsing="false" onAction="#login" prefHeight="37.0" prefWidth="253.0" style="-fx-background-color: #15C31F;" text="Zaloguj" textFill="WHITE">
+   <Button layoutX="143.0" layoutY="361.0" mnemonicParsing="false" onAction="#login" prefHeight="37.0" prefWidth="253.0" style="-fx-background-color: #0c7d2c;" text="Zaloguj" textFill="WHITE">
       <font>
          <Font size="16.0" />
       </font>
       </Button>
-   <Label fx:id="warning" alignment="CENTER" layoutX="45.0" layoutY="233.0" prefHeight="37.0" prefWidth="595.0" text="Podany uzytkownik nie istnieje! " textFill="#da0c0c" visible="false" />
-   <ImageView disable="true" fitHeight="139.0" fitWidth="200.0" layoutX="238.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+   <Label fx:id="warning" alignment="CENTER" layoutX="100.0" layoutY="233.0" prefHeight="37.0" prefWidth="595.0" text="Podany uzytkownik nie istnieje! " textFill="#da0c0c" visible="false" />
+   <ImageView disable="true" fitHeight="139.0" fitWidth="200.0" layoutX="307.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
       <image>
          <Image url="@../images/money.jpg" />
       </image>
