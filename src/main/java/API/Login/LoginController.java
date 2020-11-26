@@ -1,5 +1,6 @@
-package API;
+package API.Login;
 
+import API.ChangeScene;
 import Entities.User;
 import Models.UserModel;
 import javafx.concurrent.Task;
@@ -13,7 +14,6 @@ import javafx.stage.Stage;
 import java.net.URL;
 
 public class LoginController {
-
 
     @FXML
     private TextField pesel;
@@ -69,5 +69,3 @@ public class LoginController {
     }
 
 }
-
-

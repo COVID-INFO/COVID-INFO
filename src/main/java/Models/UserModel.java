@@ -63,7 +63,7 @@ public class UserModel {
     }
 
 
-    public void createUser(String pesel,String lastname)
+    public void createUser(String pesel,String lastname,int d,int i,int q,int r)
     {
         Transaction transaction = null;
         try (Session session = sessionFactory.openSession()) {
@@ -71,10 +71,10 @@ public class UserModel {
             User user = new User();
             user.setPesel(pesel);
             user.setLastName(lastname);
-            user.setDead(0);
-            user.setInfected(0);
-            user.setQuarantine(0);
-            user.setRecovered(0);
+            user.setDead(d);
+            user.setInfected(i);
+            user.setQuarantine(q);
+            user.setRecovered(r);
             session.save(user);
 
             transaction.commit();
@@ -84,6 +84,27 @@ public class UserModel {
                 transaction.rollback();
             }
         }
+    }
+    public void updateUser(String pesel,int d,int i,int q,int r){
+        Transaction transaction = null;
+        try (Session session = sessionFactory.openSession()) {
+            transaction = session.beginTransaction();
+
+            session.createQuery("update from User Set quarantine =: quarantine," +
+                    "recovered =: recovered,infected =: infected, dead =:dead WHERE pesel = :pesel")
+                    .setParameter("pesel", pesel)
+                    .setParameter("quarantine", q)
+                    .setParameter("recovered", r)
+                    .setParameter("infected", i)
+                    .setParameter("dead", d)
+                    .executeUpdate();
+
+            transaction.commit();
+
+        } catch (Exception e) {
+
+        }
+
     }
 
 }

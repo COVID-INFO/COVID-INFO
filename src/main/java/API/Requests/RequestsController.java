@@ -1,6 +1,8 @@
-package API;
+package API.Requests;
 
-public class StatisticsController {
+import API.ChangeScene;
+
+public class RequestsController {
     public void back(){
         ChangeScene.launchScene("/views/Menu.fxml");
     }

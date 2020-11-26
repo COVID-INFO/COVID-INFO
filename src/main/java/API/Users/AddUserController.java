@@ -1,4 +1,6 @@
-package API;
+package API.Users;
+
+import API.ChangeScene;
 
 public class AddUserController {
     public void back(){

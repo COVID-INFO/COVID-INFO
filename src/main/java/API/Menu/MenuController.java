@@ -1,6 +1,7 @@
-package API;
+package API.Menu;
 
 
+import API.ChangeScene;
 import javafx.fxml.FXML;
 
 public class MenuController {

@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="API.ListOfUsersController">
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="API.Users.ListOfUsersController">
    <children>
       <Label alignment="CENTER" layoutX="-2.0" layoutY="1.0" prefHeight="54.0" prefWidth="800.0" text="LISTA UŻYTKOWNIKÓW" textAlignment="CENTER" textFill="WHITE">
          <font>

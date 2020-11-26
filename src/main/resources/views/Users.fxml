@@ -6,7 +6,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="API.UsersController">
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="API.Users.UsersController">
    <children>
       <Label alignment="CENTER" layoutX="-2.0" prefHeight="103.0" prefWidth="807.0" style="-fx-background-color: #0c7d2c;" text="UŻYTKOWNICY" textFill="WHITE">
          <font>

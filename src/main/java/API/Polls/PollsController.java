@@ -1,6 +1,8 @@
-package API;
+package API.Polls;
 
-public class RequestsController {
+import API.ChangeScene;
+
+public class PollsController {
     public void back(){
         ChangeScene.launchScene("/views/Menu.fxml");
     }

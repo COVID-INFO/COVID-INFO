@@ -1,5 +1,6 @@
-package API;
+package API.Dead;
 
+import API.ChangeScene;
 import Entities.User;
 import Models.UserModel;
 import javafx.collections.ObservableList;
@@ -12,7 +13,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class ListOfInfectedController implements Initializable {
+public class ListOfDeadController implements Initializable {
     @FXML
     private TableView<User> tab;
     @FXML private TableColumn<User, Integer> idUser;
@@ -26,12 +27,12 @@ public class ListOfInfectedController implements Initializable {
         lastname.setCellValueFactory(new PropertyValueFactory<>("lastName"));
 
         UserModel userModel = new UserModel();
-        ObservableList show  = userModel.getListOfUsers("infected");
+        ObservableList show  = userModel.getListOfUsers("dead");
         tab.getItems().setAll(show);
 
     }
     public void back(){
-        ChangeScene.launchScene("/views/Infected.fxml");
+        ChangeScene.launchScene("/views/Dead.fxml");
     }
 
 }

@@ -13,6 +13,7 @@ public class HibernateUtil{
 
             Configuration configuration = new Configuration();
             configuration.addAnnotatedClass(Entities.User.class);
+            configuration.addAnnotatedClass(Entities.Message.class);
             configuration.configure("hibernate.cfg.xml");
             System.out.println("Hibernate Annotation Configuration loaded");
 

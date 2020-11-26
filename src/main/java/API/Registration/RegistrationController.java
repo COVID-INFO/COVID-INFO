@@ -1,5 +1,6 @@
-package API;
+package API.Registration;
 
+import API.ChangeScene;
 import Models.UserModel;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -23,7 +24,7 @@ public class RegistrationController {
             peselExist.setVisible(true);
         }
         else {
-            userModel.createUser(p, l);
+            userModel.createUser(p, l,0,0,0,0);
             peselExist.setVisible(false);
             created.setVisible(true);
         }

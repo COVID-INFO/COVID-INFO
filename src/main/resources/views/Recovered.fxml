@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="API.RecoveredController"
+            fx:controller="API.Recovered.RecoveredController"
             prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;">
     <children>
         <Label alignment="CENTER" layoutX="-2.0" prefHeight="103.0" prefWidth="807.0" style="-fx-background-color: #0c7d2c;" text="OZDROWIALI" textFill="WHITE">
@@ -16,7 +16,7 @@
                 <Font size="23.0" />
             </font>
         </Label>
-        <Button alignment="CENTER" layoutX="236.0" layoutY="123.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="320.0" style="-fx-background-color: #0c7d2c;" text="Dodaj użytkownika do ozdrowiałych" textAlignment="CENTER" textFill="WHITE">
+        <Button onAction="#addToRecovered" alignment="CENTER" layoutX="236.0" layoutY="123.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="320.0" style="-fx-background-color: #0c7d2c;" text="Dodaj użytkownika do ozdrowiałych" textAlignment="CENTER" textFill="WHITE">
             <font>
                 <Font size="15.0" />
             </font>
