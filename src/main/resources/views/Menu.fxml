@@ -48,9 +48,14 @@
                </font></Button>
          </children>
       </VBox>
-      <Label alignment="CENTER" layoutY="4.0" prefHeight="47.0" prefWidth="800.0" text="Witaj! Jesteś zalogowany jako administrator." textAlignment="CENTER" textFill="#fffafa">
+      <Label fx:id="role" alignment="CENTER" layoutY="4.0" prefHeight="30.0" prefWidth="800.0" text="Witaj! Jesteś zalogowany jako administrator." textAlignment="CENTER" textFill="#fffafa">
          <font>
-            <Font size="16.0" />
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="permission" alignment="CENTER" layoutX="10.0" layoutY="14.0" prefHeight="47.0" prefWidth="800.0" text="Nie masz uprawnień!" textAlignment="CENTER" textFill="#e80000" visible="false">
+         <font>
+            <Font size="13.0" />
          </font>
       </Label>
    </children>

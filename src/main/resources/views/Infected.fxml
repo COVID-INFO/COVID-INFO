@@ -12,20 +12,25 @@
                 <Font size="23.0" />
             </font>
         </Label>
-        <Button onAction="#addToInfected" alignment="CENTER" layoutX="236.0" layoutY="123.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="320.0" style="-fx-background-color: #0c7d2c;" text="Dodaj użytkownika do zarażonych" textAlignment="CENTER" textFill="WHITE">
+        <Button alignment="CENTER" layoutX="242.0" layoutY="143.0" mnemonicParsing="false" onAction="#addToInfected" prefHeight="50.0" prefWidth="320.0" style="-fx-background-color: #0c7d2c;" text="Dodaj użytkownika do zarażonych" textAlignment="CENTER" textFill="WHITE">
             <font>
                 <Font size="15.0" />
             </font>
         </Button>
-        <Button onAction="#displayUsers" alignment="CENTER" contentDisplay="CENTER" layoutX="236.0" layoutY="200.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="320.0" style="-fx-background-color: #0c7d2c;" text="Wyświetl zarażonych użytkowników" textAlignment="CENTER" textFill="WHITE">
+        <Button alignment="CENTER" contentDisplay="CENTER" layoutX="242.0" layoutY="216.0" mnemonicParsing="false" onAction="#displayUsers" prefHeight="50.0" prefWidth="320.0" style="-fx-background-color: #0c7d2c;" text="Wyświetl zarażonych użytkowników" textAlignment="CENTER" textFill="WHITE">
             <font>
                 <Font size="15.0" />
             </font>
         </Button>
-        <Button onAction="#back" alignment="CENTER" layoutX="236.0" layoutY="318.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="320.0" style="-fx-background-color: #0c7d2c;" text="Powrót" textAlignment="CENTER" textFill="WHITE">
+        <Button alignment="CENTER" layoutX="242.0" layoutY="321.0" mnemonicParsing="false" onAction="#back" prefHeight="50.0" prefWidth="320.0" style="-fx-background-color: #0c7d2c;" text="Powrót" textAlignment="CENTER" textFill="WHITE">
             <font>
                 <Font size="15.0" />
             </font>
         </Button>
+        <Label fx:id="permission" alignment="CENTER" layoutX="2.0" layoutY="103.0" prefHeight="47.0" prefWidth="800.0" text="Nie masz uprawnień!" textAlignment="CENTER" textFill="#e80000" visible="false">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Label>
     </children>
 </AnchorPane>

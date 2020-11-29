@@ -15,6 +15,7 @@ import java.net.URL;
 
 public class LoginController {
 
+    public static int isAdmin;
     @FXML
     private TextField pesel;
     @FXML
@@ -26,6 +27,7 @@ public class LoginController {
             @Override
             protected User call() {
                 UserModel userModel = new UserModel();
+                isAdmin = userModel.getUser(pesel.getText()).getAdmin();
                 return userModel.getUser(pesel.getText());
             }
         };

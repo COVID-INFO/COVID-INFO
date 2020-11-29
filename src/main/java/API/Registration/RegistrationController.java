@@ -24,7 +24,7 @@ public class RegistrationController {
             peselExist.setVisible(true);
         }
         else {
-            userModel.createUser(p, l,0,0,0,0);
+            userModel.createUser(p, l,0,0,0,0,1,"","","","","","","","");
             peselExist.setVisible(false);
             created.setVisible(true);
         }

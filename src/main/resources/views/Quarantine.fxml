@@ -12,20 +12,25 @@
                 <Font size="23.0" />
             </font>
         </Label>
-        <Button onAction="#addToQuarantine" alignment="CENTER" layoutX="236.0" layoutY="123.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="320.0" style="-fx-background-color: #0c7d2c;" text="Dodaj użytkownika do kwarantanny" textAlignment="CENTER" textFill="WHITE">
+        <Button alignment="CENTER" layoutX="236.0" layoutY="144.0" mnemonicParsing="false" onAction="#addToQuarantine" prefHeight="50.0" prefWidth="320.0" style="-fx-background-color: #0c7d2c;" text="Dodaj użytkownika do kwarantanny" textAlignment="CENTER" textFill="WHITE">
             <font>
                 <Font size="15.0" />
             </font>
         </Button>
-        <Button onAction="#displayUsers" alignment="CENTER" contentDisplay="CENTER" layoutX="236.0" layoutY="200.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="320.0" style="-fx-background-color: #0c7d2c;" text="Wyświetl użytkowników na kwarantannie" textAlignment="CENTER" textFill="WHITE">
+        <Button alignment="CENTER" contentDisplay="CENTER" layoutX="236.0" layoutY="218.0" mnemonicParsing="false" onAction="#displayUsers" prefHeight="50.0" prefWidth="320.0" style="-fx-background-color: #0c7d2c;" text="Wyświetl użytkowników na kwarantannie" textAlignment="CENTER" textFill="WHITE">
             <font>
                 <Font size="15.0" />
             </font>
         </Button>
-        <Button  onAction="#back" alignment="CENTER" layoutX="236.0" layoutY="318.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="320.0" style="-fx-background-color: #0c7d2c;" text="Powrót" textAlignment="CENTER" textFill="WHITE">
+        <Button alignment="CENTER" layoutX="236.0" layoutY="318.0" mnemonicParsing="false" onAction="#back" prefHeight="50.0" prefWidth="320.0" style="-fx-background-color: #0c7d2c;" text="Powrót" textAlignment="CENTER" textFill="WHITE">
             <font>
                 <Font size="15.0" />
             </font>
         </Button>
+        <Label fx:id="permission" alignment="CENTER" layoutX="-4.0" layoutY="103.0" prefHeight="47.0" prefWidth="800.0" text="Nie masz uprawnień!" textAlignment="CENTER" textFill="#e80000" visible="false">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Label>
     </children>
 </AnchorPane>

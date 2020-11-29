@@ -9,6 +9,6 @@
         <property name="hibernate.connection.password">IHWVdtaFz6</property>
 
          <mapping class="Entities.User"/>
-
+         <mapping class="Entities.Message"/>
     </session-factory>
 </hibernate-configuration>

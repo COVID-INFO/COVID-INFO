@@ -25,5 +25,23 @@ public class User {
     private int infected;
     @Column
     private int dead;
+    @Column
+    private int admin;
+    @Column
+    private String name;
+    @Column
+    private String region;
+    @Column
+    private String city;
+    @Column
+    private String district;
+    @Column
+    private String community;
+    @Column
+    private String postcode;
+    @Column
+    private String street;
+    @Column
+    private String houseNr;
 
 }

@@ -63,7 +63,8 @@ public class UserModel {
     }
 
 
-    public void createUser(String pesel,String lastname,int d,int i,int q,int r)
+    public void createUser(String pesel,String lastname,int d,int i,int q,int r,int admin, String name,String region,
+                    String city,String district,String community,String postcode,String street,String houseNr)
     {
         Transaction transaction = null;
         try (Session session = sessionFactory.openSession()) {
@@ -75,6 +76,15 @@ public class UserModel {
             user.setInfected(i);
             user.setQuarantine(q);
             user.setRecovered(r);
+            user.setAdmin(admin);
+            user.setName(name);
+            user.setRegion(region);
+            user.setCity(city);
+            user.setDistrict(district);
+            user.setCommunity(community);
+            user.setPostcode(postcode);
+            user.setStreet(street);
+            user.setHouseNr(houseNr);
             session.save(user);
 
             transaction.commit();

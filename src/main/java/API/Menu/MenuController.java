@@ -2,10 +2,25 @@ package API.Menu;
 
 
 import API.ChangeScene;
+import API.Login.LoginController;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 
-public class MenuController {
 
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class MenuController implements Initializable {
+    @FXML
+    private Label role;
+    @FXML
+    private Label permission;
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        if(LoginController.isAdmin==1) role.setText("Witaj! Jesteś zalogowany jako administrator.");
+        else role.setText("Witaj! Jesteś zalogowany jako użytkownik.");
+    }
     @FXML
     private void listOfUsers() {
        ChangeScene.launchScene("/views/Users.fxml");
@@ -28,11 +43,13 @@ public class MenuController {
     }
     @FXML
     private void polls() {
-        ChangeScene.launchScene("/views/Polls.fxml");
+        if(LoginController.isAdmin==0) permission.setVisible(true);
+        else ChangeScene.launchScene("/views/Polls.fxml");
     }
     @FXML
     private void requests() {
-        ChangeScene.launchScene("/views/Requests.fxml");
+        if(LoginController.isAdmin==0) permission.setVisible(true);
+        else ChangeScene.launchScene("/views/Requests.fxml");
     }
     @FXML
     private void statistics() {
@@ -42,5 +59,6 @@ public class MenuController {
     private void logout() {
         ChangeScene.launchScene("/views/Login.fxml");
     }
+
 
 }
