@@ -1,13 +1,10 @@
 package API.Statistics;
 
 import API.ChangeScene;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import javafx.fxml.FXML;
+import API.Login.LoginController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.chart.PieChart;
 import javafx.stage.Stage;
 
 import java.net.URL;
@@ -51,6 +48,7 @@ public class StatisticsController{
         }
     }
     public void back(){
-        ChangeScene.launchScene("/views/Menu.fxml");
+        if(LoginController.isAdmin==1) ChangeScene.launchScene("/views/Admin/MenuAdmin.fxml");
+        else  ChangeScene.launchScene("/views/User/MenuUser.fxml");
     }
 }

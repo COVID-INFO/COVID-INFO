@@ -14,7 +14,7 @@ import javafx.stage.Stage;
 import java.net.URL;
 
 public class LoginController {
-
+    public static String P;
     public static int isAdmin;
     @FXML
     private TextField pesel;
@@ -28,13 +28,15 @@ public class LoginController {
             protected User call() {
                 UserModel userModel = new UserModel();
                 isAdmin = userModel.getUser(pesel.getText()).getAdmin();
+                P = pesel.getText();
                 return userModel.getUser(pesel.getText());
             }
         };
         loadUserTask.setOnSucceeded(e -> {
             if(loadUserTask.getValue()!=null){
                 try {
-                   ChangeScene.launchScene("/views/Menu.fxml");
+                   if(isAdmin==1) ChangeScene.launchScene("/views/Admin/MenuAdmin.fxml");
+                   else ChangeScene.launchScene("/views/User/MenuUser.fxml");
                 }catch (Exception ex) {
                     ex.printStackTrace();
                 }
@@ -56,7 +58,7 @@ public class LoginController {
         try {
             Stage stage = new Stage();
             FXMLLoader loader = new FXMLLoader();
-            URL xmlURL = getClass().getResource("/views/Registration.fxml");
+            URL xmlURL = getClass().getResource("/views/Admin/Registration.fxml");
             loader.setLocation(xmlURL);
             Parent root = loader.load();
             Scene scene2 = new Scene(root);

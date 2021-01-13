@@ -24,7 +24,7 @@ public class RegistrationController {
             peselExist.setVisible(true);
         }
         else {
-            userModel.createUser(p, l,0,0,0,0,1,"","","","","","","","");
+            userModel.createUser(p, l,0,0,0,0,0,"","","","","","","","");
             peselExist.setVisible(false);
             created.setVisible(true);
         }
@@ -32,7 +32,7 @@ public class RegistrationController {
 
     @FXML
     public void back(){
-        ChangeScene.launchScene("/views/Users.fxml");
+        ChangeScene.launchScene("/views/Admin/Users.fxml");
     }
 
 }

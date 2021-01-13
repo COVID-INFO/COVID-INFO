@@ -21,7 +21,7 @@ public class MainApplication extends Application {
     public void start(Stage primaryStage) throws IOException {
         Scene scene;
 
-                root = FXMLLoader.load(getClass().getResource("/views/Login.fxml"));
+                root = FXMLLoader.load(getClass().getResource("/Login.fxml"));
                 scene = new Scene(root, 800, 500);
                 MainApplication.primaryStage = primaryStage;
                 primaryStage.setTitle("Covid-19");
